@@ -1,4 +1,4 @@
-## On THe Way Traveler - EEI3346 mini project ##  -- Front-end --
+## On The Way Traveler ##  -- Front-end --
 ## Author - G. G . Maleesha ##
 
 ## Technologies ##
