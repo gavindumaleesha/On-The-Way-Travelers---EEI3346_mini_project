@@ -1,0 +1,531 @@
+body{
+    height: 100%;
+    margin: 0;
+}
+
+/* CSS For Menu Bar */
+
+.menu_bar{
+    box-shadow: 5px 5px 5px rgb(134, 134, 134);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 0%;
+    background-color: white;
+    z-index: 1;
+}
+
+.menu_bar ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu_bar li{
+    display: inline;
+}
+
+.menu_bar li a{
+    display: inline;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+}
+
+.menu_bar a:hover {
+    color: #0179c9;
+}
+
+.menu_bar a.active {
+    border-bottom: 3px solid #0179c9;
+}
+
+.menu_bar label{
+   padding-right: 500px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 25px;
+   font-weight: bold;
+   color: #0179c9;
+}
+
+.menu_bar li img{
+    width: 10%;
+    height: 10%;
+    display: inline;
+    
+} 
+
+/* CSS for Main Banner */
+
+.banner-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("../src/bg\ img.jpg");
+    background-position: center;
+    margin-top:5% ;
+    height: 665px;
+}
+
+.banner-text{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-text h1{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    animation: reveal 3000ms ease-in-out forwards 200ms,glow 2500ms linear infinite 2000ms;
+}
+
+/* Animation Part of the banner text */
+
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+}
+
+@keyframes glow {
+    40% {
+    text-shadow: 0 0 8px #0179c9;
+    }
+}
+
+.search_bar input{
+    height: 40px;
+    width: 400px;
+    border-radius: 5px;
+    background: rgba(220, 255, 255, 0.6);
+    border-color: rgba(220, 255, 255, 0.6);
+}
+
+.search_bar button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: white;
+    height: 45px;
+    width: 90px;
+    border-radius: 5px;
+    border-color: #0179c9;
+    background-color: #0179c9;
+}
+
+/* CSS For Main Heading */
+
+.main-heading{
+    line-height: 100%;
+}
+.main-heading h1{
+    text-align: center;
+    font-size: 550%;
+    font-family: 'Shadows Into Light', cursive;
+    margin-top: 50px;
+    color: rgb(68, 87, 94);
+}
+
+.main-heading h2{
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    letter-spacing: 9px;
+    font-size: 450%;
+}
+
+p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-align: justify;
+}
+
+
+/* CSS for Body */
+
+
+.sub_body{
+    padding-top: 10px;
+}
+
+.sub_body img{
+    width: 475px;
+    height: 100%;
+    padding: 20px;
+}
+
+p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 130%;
+    text-align: center;
+    text-align: justify;
+    padding: 30px;
+}
+
+.welcome_message{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Niconne', cursive;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+/* Animation part for Welcome message */
+
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+}
+
+/* CSS for Video Gallery */
+
+.v_gallery{
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+
+}
+
+.v_gallery iframe{
+    width: 22%;
+    height: auto;
+    padding: 1%;
+}
+
+.v_gallery iframe:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+
+/* CSS For Customize Tour */
+
+
+.customize{
+    line-height:80%;
+    padding: 20px;
+}
+
+.customize h1{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+.customize p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.customize button{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    background-color: #0179c9;
+    border-radius: 25px;
+    height: auto;
+    width: 30%;
+    display: inline;
+    margin-left: 35%;
+    border-color: white;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.customize button a{
+    text-decoration: none;
+    color: white;
+}
+  
+.btn-1:before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    background : #fff;
+    left: -55px;
+    top: -40px;
+    transform: rotate(37deg);
+    transition: all .3s;
+    opacity: 0.3;
+}
+  
+.btn-1:hover:before {
+    left:95%;
+}
+
+
+/* CSS for Holiday Packages */
+
+
+.packages{
+    padding-top:50px ;
+}
+
+.packages table{
+    padding-right: 200px;
+    padding-left: 250px;
+}
+
+.packages h1{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.packages img{
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+
+.packages img:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+}
+
+.packages p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;
+}
+
+.details p{
+    padding-top: 0px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.packages label{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 200%;
+
+}
+
+.packages button{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px; 
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(193, 7, 7);
+    border: rgb(193, 7, 7);
+    margin-top: 20px;
+}
+
+.packages tr{
+    padding: 20px;
+}
+
+.details button{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px; 
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(11, 109, 236);
+    border: rgb(193, 7, 7);
+    margin-top: 20px;
+}
+
+
+/*CSS for more button */
+
+.more_button button{
+    padding: 5px;
+    padding-bottom: 20px;
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bolder;
+    font-size:large;
+    align-items: center;
+    margin-left: 40%;
+    background-color: rgb(225, 3, 3);
+    color: white;
+    border-color:rgb(225, 3, 3) ;
+}
+
+.more_button button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+/* CSS for Footer */
+
+.footer{
+    line-height: 1.5;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.container2{
+	max-width: 	1170px;
+	margin-left: 200px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #0179c9;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color:#0179c9;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: rgb(53, 53, 53);
+	background-color:#0179c9;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.footer-col ul{
+    font-size: larger;
+    color: #d4d4d4;
+}
+
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+
+.footer-col ul{
+    text-transform: capitalize;
+}

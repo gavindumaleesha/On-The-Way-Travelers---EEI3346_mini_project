@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- External CSS File -->
+        <link rel="stylesheet" type="text/css" href="./css/page5.css"></link>
+    
+        <!-- Importing Font Style & Icons -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Delius&family=Niconne&family=Readex+Pro&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
+        <link rel="icon" type="image/x-icon" href="./src/logo/logo_main.jpg">
+
+        <!-- External JavaScript File -->
+        <script type="text/javascript" src="./JS/script_p5.js"></script>
+    
+        <title>Contact US</title>
+    
+    </head>
+<body>
+
+    <!-- Menu Bar -->
+    <div class="menu_bar">
+        <ul>
+            <li><label>On The Way Travelers</label></li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./page2.html">About Us</a></li>
+            <li><a href="./page3.html">Where To Go</a></li>
+            <li><a href="./page4.html">What To Do</a></li>
+            <li><a class="active" href="./page5.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+    
+        <p> 
+            DIAL <b>1912</b> from any phone within Sri Lanka to <br>
+            access tourism Information.
+        </p>
+
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3> Please submit your Complaints and Suggestions.</h3>  
+
+                    <form name="contactus" onsubmit="return validateForm()">
+                        <div class="input-row">
+
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder=" Jhon Amendo" name="contactname">
+                            </div>
+    
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder=" +94 700000000" name="contacttp">
+                            </div>
+                    
+                        </div>
+
+                        <div class="input-row">
+
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder=" Jhon@example.com" name="contactemail">
+                            </div>
+    
+                            <div class="input-group">  
+                                <label>Subject</label>
+                                <input type="text" placeholder=" About Transportation" name="contactsub">
+                            </div>
+                    
+                        </div>  
+
+                        <label>Message</label>
+                        <textarea rows="6" placeholder=" Your Message" name="contactmessage"></textarea>
+                        <button type="submit">Send</button>
+
+                    </form>   
+            </div>
+
+            <!-- Details Box -->
+            <div class="contact-right">
+
+                <h3> Contact Details</h3>
+
+                <table>
+
+                    <tr>
+                        <td>Email</td>
+                        <td>onthewaytravelers@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>phone</td>
+                        <td>+94 11 2222222</td>
+                    </tr>
+
+                    <tr>
+                        <td>phone</td>
+                        <td>+94 11 2333333</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address</td>
+                        <td>On The Way Travelers<br>
+                            No:8 main street,<br>
+                            colombo 07</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>hot lines</h4>
+                    <ul>
+                        <lh>tourism hotline</lh>
+                        <li>
+                            <a href="tel:1919">1919</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <lh>ambulance service</lh>
+                        <li>
+                            <a href="tel:1990">1990</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>quick links</h4>
+                    <ul>
+                        <li><a href="./page3.html">locations</a></li>
+                        <li><a href="https://sltda.gov.lk/en">investor relations unit</a></li>
+                        <li><a href="./page5.html">complaints</a></li>  
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>other sites</h4>
+                    <ul>
+                        <li><a href="https://www.tourismmin.gov.lk/" target="blank">ministry of tourism</a></li>
+                        <li><a href="https://www.srilankan.com/en_uk/lk" target="blank">sri lanka airlines</a></li>
+                        <li><a href="https://www.sltda.gov.lk/en" target="blank">sri lanka tourism development authority</a></li>
+                        <li><a href="https://slithm.edu.lk/" target="blank">sri lanka institute so tourism & hotel management</a></li>
+                        <li><a href="https://immigration.gov.lk/" target="blank">department of immigration and emigration</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

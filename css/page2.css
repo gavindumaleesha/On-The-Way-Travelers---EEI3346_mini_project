@@ -1,0 +1,304 @@
+body{
+    height: 100%;
+    margin: 0;
+}
+
+/* CSS For Menu Bar */
+
+.menu_bar{
+    box-shadow: 5px 5px 5px rgb(134, 134, 134);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-left: 0%;
+    background-color: white;
+    z-index: 1;
+}
+
+.menu_bar ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu_bar li{
+    display: inline;
+}
+
+.menu_bar li a{
+    display: inline;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+}
+
+.menu_bar a:hover {
+    color: #0179c9;
+}
+
+.menu_bar a.active {
+    border-bottom: 3px solid #0179c9;
+}
+
+.menu_bar label{
+   padding-right: 500px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 25px;
+   font-weight: bold;
+   color: #0179c9;
+}
+
+.menu_bar li img{
+    width: 50px;
+    height: 50px;
+    display: inline;
+    
+} 
+
+/* Main Banner */
+
+.m_banner img{
+	width: 100%;
+	margin-top: 30px;
+}
+
+
+.comments img{
+	vertical-align: middle;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+/* main description */
+.description p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    text-align: justify;
+    padding: 5%;
+	padding-top: 0%;
+	width: auto;
+}
+
+h1{
+	font-family: 'Be Vietnam Pro', sans-serif;
+	font-size: 60px;
+	text-align: center;
+}
+
+/* Awards */
+div.gallery {
+	margin: 5px;
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 50px;
+}
+
+div.gallery img {
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+}
+
+
+/* Chairman */
+.chairman_mes h1{
+	padding-top: 10%;
+}
+.chairman_mes p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    padding: 5%;
+	padding-top: 0%;
+	width: auto;
+}
+
+.chairman_mes img{
+	width: 260px;
+	height: 300px;
+	padding: 10%;
+}
+
+/* comments */
+.comments table{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.comments p{
+	font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    padding: 5%;
+	width: auto;
+}
+
+/* button */
+.final_button{
+	align-content: center;
+	padding: 5%;
+}
+
+button{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #0179c9;
+    border-radius: 25px;
+    height: 60px;
+    width: 500px;
+    display: inline;
+    margin-left: 35%;
+    border-color: white;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position:relative;
+    overflow:hidden;
+
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+  
+.btn-1:before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    background : #fff;
+    left: -55px;
+    top: -40px;
+    transform: rotate(37deg);
+    transition: all .3s;
+    opacity: 0.3;
+}
+  
+.btn-1:hover:before {
+    left:95%;
+}
+
+
+
+
+/* CSS for Footer */
+
+.footer{
+    line-height: 1.5;
+    font-family: 'Be Vietnam Pro', sans-serif;
+	margin-top: 5%;
+}
+
+.container2{
+	max-width: 	1170px;
+	margin-left: 200px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #0179c9;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color:#0179c9;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: rgb(53, 53, 53);
+	background-color:#0179c9;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.footer-col ul{
+    font-size: larger;
+    color: #d4d4d4;
+}
+
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+
+.footer-col ul{
+    text-transform: capitalize;
+}

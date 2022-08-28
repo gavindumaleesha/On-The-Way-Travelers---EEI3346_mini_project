@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- External CSS File -->
+        <link rel="stylesheet" type="text/css" href="./css/page4.css"></link>
+    
+        <!-- Importing Font Style & Icons -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Delius&family=Niconne&family=Readex+Pro&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
+        <link rel="icon" type="image/x-icon" href="./src/logo/logo_main.jpg">
+
+        <!-- development version, includes helpful console warnings -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+
+        <!-- link the google meterial icons to the website -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+        <title>What To Do</title>
+
+    </head>
+<body>
+
+    <!-- Menu Bar -->
+    <div class="menu_bar">
+        <ul>
+            <li><label>On The Way Travelers</label></li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./page2.html">About Us</a></li>
+            <li><a href="./page3.html">Where To Go</a></li>
+            <li><a class="active" href="./page4.html">What To Do</a></li>
+            <li><a href="./page5.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- To Do List -->
+    <main id="todolist">
+          
+        <!--Heading of To Do list-->     
+        <h1>
+          Plan Your Tour
+        </h1>
+            
+  
+        <transition-group name="todolist" tag="ul">
+  
+          <li id="li7" v-for="item in todoByStatus" v-bind:class="item.done ? 'done' : ''" v-bind:key="item.id" >
+            
+            <span class="label">
+              {{item.label}}
+            </span>
+              
+            <div class="actions">
+                    
+              <button class="btn-picto" type="button" v-on:click="deleteItemFromList(item)" aria-label="Delete" title="Delete">
+                <i aria-hidden="true" class="material-icons">delete</i>
+              </button>
+              
+            </div>
+  
+          </li>
+        
+        </transition-group>
+                
+  
+        <form name="newform" v-on:submit.prevent="addItem">
+                
+          <label for="newitem">
+            Add to the todo list
+          </label>
+                
+          <input type="text" name="newitem" id="newitem" v-model="newitem"  required>
+                
+          <button type="submit">
+            Add Place
+          </button>
+  
+        </form>
+            
+        <!-- Vue Js  -->
+        <script>
+          Vue.component({
+            props: ['label', 'name'],
+            model: {
+            prop: 'checked',
+            event: 'change'
+            },
+            data: function() {
+              return {
+                isactive:false
+              }
+            },
+            methods: {
+              onToogle: function() {
+                this.$emit('clicked', this.isactive)
+              }
+            }       
+          });
+  
+          var todolist = new Vue({
+            el: '#todolist',
+            data: {
+              newitem:'',
+              sortByStatus:false,
+              todo: []
+            },
+            methods: {
+              addItem: function() {
+                this.todo.push({id: Math.floor(Math.random() * 9999) + 10, label: this.newitem, done: false});
+                this.newitem = '';
+              },
+              markAsDoneOrUndone: function(item) {
+                item.done = !item.done;
+              },
+              deleteItemFromList: function(item) {
+                let index = this.todo.indexOf(item)
+                this.todo.splice(index, 1);
+              },
+              clickontoogle: function(active) {
+                this.sortByStatus = active;
+              }
+            },
+            computed: {
+              todoByStatus: function() {
+  
+                if(!this.sortByStatus) {
+                  return this.todo;
+                }
+  
+                var sortedArray = []
+                var doneArray = this.todo.filter(function(item) { return item.done; });
+                var notDoneArray = this.todo.filter(function(item) { return !item.done; });
+        
+                sortedArray = [...notDoneArray, ...doneArray];
+          
+                return sortedArray;
+              } 
+            }
+          });
+        </script>
+              
+      </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container2">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>hot lines</h4>
+                    <ul>
+                        <lh>tourism hotline</lh>
+                        <li>
+                            <a href="tel:1919">1919</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <lh>ambulance service</lh>
+                        <li>
+                            <a href="tel:1990">1990</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>quick links</h4>
+                    <ul>
+                        <li><a href="./page3.html">locations</a></li>
+                        <li><a href="https://sltda.gov.lk/en">investor relations unit</a></li>
+                        <li><a href="./page5.html">complaints</a></li>  
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>other sites</h4>
+                    <ul>
+                        <li><a href="https://www.tourismmin.gov.lk/" target="blank">ministry of tourism</a></li>
+                        <li><a href="https://www.srilankan.com/en_uk/lk" target="blank">sri lanka airlines</a></li>
+                        <li><a href="https://www.sltda.gov.lk/en" target="blank">sri lanka tourism development authority</a></li>
+                        <li><a href="https://slithm.edu.lk/" target="blank">sri lanka institute so tourism & hotel management</a></li>
+                        <li><a href="https://immigration.gov.lk/" target="blank">department of immigration and emigration</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
