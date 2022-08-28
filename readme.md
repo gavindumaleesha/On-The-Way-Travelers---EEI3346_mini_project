@@ -1,4 +1,4 @@
-## On The Way Traveler ##  -- Front-end --
+## On The Way Travelers ##  -- Front-end --
 ## Author - G. G . Maleesha ##
 
 ## Technologies ##
