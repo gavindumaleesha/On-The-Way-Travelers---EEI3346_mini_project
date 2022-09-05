@@ -1,8 +1,5 @@
-## On The Way Travelers ##  -- Front-end --
+## On The Way Travelers -- Front-end --
 ## Author - G. G . Maleesha ##
 
 ## Technologies ##
-# HTML
-# Java Script
-# Vue Js
-# CSS
+HTML | Java Script | Vue Js | CSS
